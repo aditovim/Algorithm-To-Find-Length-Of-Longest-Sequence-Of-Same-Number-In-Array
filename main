@@ -1,0 +1,33 @@
+ public static int LongSequens(int[] a)
+        {
+            int longest = 0, length = 1 ;
+
+
+            for (int i = 1; i < a.Length; i++)
+            {
+
+                if (a[i] == a[i - 1])
+                {
+
+                    length++;
+
+                }
+                else
+                {
+
+                    length = 1;
+
+                }
+
+                if (length > longest)
+                {
+
+                    longest = length;
+
+                }
+
+            }
+
+            return longest;
+
+        }
